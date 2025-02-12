@@ -1,0 +1,15 @@
+﻿# Sensitive
+config/.env
+memory.json
+*.key
+
+# Cache
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+*.log
+
+# System
+desktop.ini
