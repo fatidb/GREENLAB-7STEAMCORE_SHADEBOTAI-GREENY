@@ -1,0 +1,26 @@
+﻿{
+    "networks": [
+        {
+            "name": "cosmoshub",
+            "chain_id": "cosmoshub-4",
+            "rpc_endpoint": "https://rpc.cosmos.network",
+            "rest_endpoint": "https://api.cosmos.network"
+        },
+        {
+            "name": "osmosis",
+            "chain_id": "osmosis-1",
+            "rpc_endpoint": "https://rpc.osmosis.zone",
+            "rest_endpoint": "https://api.osmosis.zone"
+        }
+    ],
+    "endpoints": {
+        "cosmoshub": {
+            "balances": "https://api.cosmos.network/cosmos/bank/v1beta1/balances/",
+            "staking": "https://api.cosmos.network/cosmos/staking/v1beta1/delegations/"
+        },
+        "osmosis": {
+            "balances": "https://api.osmosis.zone/cosmos/bank/v1beta1/balances/",
+            "staking": "https://api.osmosis.zone/cosmos/staking/v1beta1/delegations/"
+        }
+    }
+}
