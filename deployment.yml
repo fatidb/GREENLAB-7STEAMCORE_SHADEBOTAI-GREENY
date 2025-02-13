@@ -1,0 +1,29 @@
+﻿version: "2.0"
+
+services:
+  greeny:
+    image: ghcr.io/fatidb/greeny:v7.3
+    env:
+      - DISCORD_TOKEN=\
+    expose:
+      - port: 8080
+        to:
+          - global: true
+    resources:
+      cpu:
+        units: 1.0
+      memory:
+        size: 1Gi
+      storage:
+        size: 512Mi
+
+profiles:
+  compute:
+    greeny:
+      resources:
+        cpu:
+          units: 1.0
+        memory:
+          size: 1Gi
+        storage:
+          size: 512Mi
