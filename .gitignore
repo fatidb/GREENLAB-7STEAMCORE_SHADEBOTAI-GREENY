@@ -1,15 +1,14 @@
-﻿# Sensitive
+# Sensitive files
 config/.env
-memory.json
-*.key
-
-# Cache
+*.log
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.venv/
 
-# Logs
+# Local files
 logs/
-*.log
-
-# System
-desktop.ini
+temp.py
